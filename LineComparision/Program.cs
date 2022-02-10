@@ -2,8 +2,8 @@
 //Console.WriteLine("Hello, World!");
 using LineComparision;
 
-GeometricLine line1 = new GeometricLine();
-GeometricLine Line2 = new GeometricLine();
+CheckEquality line1 = new CheckEquality();
+CheckEquality Line2 = new CheckEquality();
 Console.WriteLine("Enter line 1 details: ");
 line1.GetPointsFromUser();
 Console.WriteLine("Enter line 2 details: ");

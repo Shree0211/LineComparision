@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LineComparision
 {
-    internal class CheckEquality
+    internal class CompareLines
     {
         // Structure to describe a geometry point
         struct Point
@@ -37,7 +37,7 @@ namespace LineComparision
         private double length;
 
         // Default constructor
-        public CheckEquality()
+        public CompareLines()
         {
             point1.Set(0, 0);
             point2.Set(0, 0);
@@ -45,7 +45,7 @@ namespace LineComparision
         }
 
         // This constructor is invoked when parameters are passed
-        public CheckEquality(int x1, int y1, int x2, int y2)
+        public CompareLines(int x1, int y1, int x2, int y2)
         {
             SetPoints(x1, y1, x2, y2);
         }
@@ -100,7 +100,7 @@ namespace LineComparision
             SetPoints(x1, y1, x2, y2);
         }
 
-        public void Compare(CheckEquality line)
+        public void Compare(CompareLines line)
         {
             if (this.length == line.length)
                 Console.WriteLine("The lines are of equal length");
